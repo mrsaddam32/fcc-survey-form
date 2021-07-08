@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1 class="title" id="title">Developer Survey Form</h1>
+    <p id="description">Please fill the form. Thank You !</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="40">
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            What developer are you ?
+            <select id="dropdown">
+                <option>Mobile Developer</option>
+                <option>Front-end Developer</option>
+                <option>Back-end Developer</option>
+                <option>Fullstack Developer</option>
+            </select>
+        </label>
+        <label for="languages" id="languages-label">
+            What programming language are you good at ?
+            <br>
+            <br>
+            <input type="radio" name="languages" value="1" checked>PHP <br>
+            <input type="radio" name="languages" value="2">Python <br>
+            <input type="radio" name="languages" value="3">Javascript <br>
+            <input type="radio" name="languages" value="4">Ruby <br>
+            <input type="radio" name="languages" value="5">Go <br>
+            <input type="radio" name="languages" value="6">Java <br>
+        </label>
+        <label for="technologies" id="technologies-label">
+            Choose technologies that you want to learn
+            <br>
+            <br>
+            <input type="checkbox" value="artificial-intelligence">Artifical Intelligence <br>
+            <input type="checkbox" value="machine-learning">Machine Learning <br>
+            <input type="checkbox" value="internet-of-things">Internet Of Things <br>
+        </label>
+        <label for="comments" id="comments-label">
+            If you have any comments/suggestion please fill this area
+            <textarea id="comments" cols="30" rows="10"></textarea>
+        </label>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
